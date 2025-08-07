@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html",
-    "./script.js"
-  ],
+  content: ["./index.html", "./script.js"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'overpass': ["Overpass", "sans-serif"],
+      },
+    },
   },
   plugins: [],
-}
+};
