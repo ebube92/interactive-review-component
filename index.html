@@ -21,7 +21,8 @@
     class="bg-[hsl(216,12%,8%)] flex items-center justify-center min-h-screen font-overpass font-normal"
   >
     <section
-      class="bg-radial-[at_50%_0%] from-[hsl(215,20%,17%)] to-[hsl(212,24%,12%)] w-[400px] font-overpass text-[#fff] p-8 rounded-4xl shadow-lg flex flex-col justify-between"
+      class="w-[90%] bg-radial-[at_50%_0%] from-[hsl(215,20%,17%)] to-[hsl(212,24%,12%)] md:w-[400px] font-overpass text-[#fff] p-8 rounded-4xl shadow-lg flex flex-col justify-between"
+      id="rating-section"
     >
       <div
         class="bg-[rgba(255,255,255,0.03)] w-[50px] h-[50px] rounded-full flex items-center justify-center"
@@ -40,32 +41,37 @@
 
       <div class="flex items-center justify-between mt-4 mb-3">
         <button
-          class="bg-[rgba(255,255,255,0.05)] w-[50px] h-[50px] rounded-full hover:bg-[hsl(25,97%,53%)] hover:text-[hsl(213,19%,18%)] focus:bg-[#fff] focus:text-[hsl(213,19%,18%)] text-[16px] font-normal cursor-pointer transition-colors duration-300 ease-in-out"
+          class="bg-[rgba(255,255,255,0.05)] w-[40px] h-[40px] md:w-[50px] md:h-[50px] rounded-full hover:bg-[hsl(25,97%,53%)] hover:text-[hsl(213,19%,18%)] focus:bg-[#fff] focus:text-[hsl(213,19%,18%)] text-[16px] font-normal cursor-pointer transition-colors duration-300 ease-in-out rating-button"
           id="button"
+          value="1"
         >
           1
         </button>
         <button
-          class="bg-[rgba(255,255,255,0.05)] w-[50px] h-[50px] rounded-full hover:bg-[hsl(25,97%,53%)] hover:text-[hsl(213,19%,18%)] focus:bg-[#fff] focus:text-[hsl(213,19%,18%)] text-[16px] font-normal cursor-pointer transition-colors duration-300 ease-in-out"
+          class="bg-[rgba(255,255,255,0.05)] w-[40px] h-[40px] md:w-[50px] md:h-[50px] rounded-full hover:bg-[hsl(25,97%,53%)] hover:text-[hsl(213,19%,18%)] focus:bg-[#fff] focus:text-[hsl(213,19%,18%)] text-[16px] font-normal cursor-pointer transition-colors duration-300 ease-in-out rating-button"
           id="button"
+          value="2"
         >
           2
         </button>
         <button
-          class="bg-[rgba(255,255,255,0.05)] w-[50px] h-[50px] rounded-full hover:bg-[hsl(25,97%,53%)] hover:text-[hsl(213,19%,18%)] focus:bg-[#fff] focus:text-[hsl(213,19%,18%)] text-[16px] font-normal cursor-pointer transition-colors duration-300 ease-in-out"
+          class="bg-[rgba(255,255,255,0.05)] w-[40px] h-[40px] md:w-[50px] md:h-[50px] rounded-full hover:bg-[hsl(25,97%,53%)] hover:text-[hsl(213,19%,18%)] focus:bg-[#fff] focus:text-[hsl(213,19%,18%)] text-[16px] font-normal cursor-pointer transition-colors duration-300 ease-in-out rating-button"
           id="button"
+          value="3"
         >
           3
         </button>
         <button
-          class="bg-[rgba(255,255,255,0.05)] w-[50px] h-[50px] rounded-full hover:bg-[hsl(25,97%,53%)] hover:text-[hsl(213,19%,18%)] focus:bg-[#fff] focus:text-[hsl(213,19%,18%)] text-[16px] font-normal cursor-pointer transition-colors duration-300 ease-in-out"
+          class="bg-[rgba(255,255,255,0.05)] w-[40px] h-[40px] md:w-[50px] md:h-[50px] rounded-full hover:bg-[hsl(25,97%,53%)] hover:text-[hsl(213,19%,18%)] focus:bg-[#fff] focus:text-[hsl(213,19%,18%)] text-[16px] font-normal cursor-pointer transition-colors duration-300 ease-in-out rating-button"
           id="button"
+          value="4"
         >
           4
         </button>
         <button
-          class="bg-[rgba(255,255,255,0.05)] w-[50px] h-[50px] rounded-full hover:bg-[hsl(25,97%,53%)] hover:text-[hsl(213,19%,18%)] focus:bg-[#fff] focus:text-[hsl(213,19%,18%)] text-[16px] font-normal cursor-pointer transition-colors duration-300 ease-in-out"
+          class="bg-[rgba(255,255,255,0.05)] w-[40px] h-[40px] md:w-[50px] md:h-[50px] rounded-full hover:bg-[hsl(25,97%,53%)] hover:text-[hsl(213,19%,18%)] focus:bg-[#fff] focus:text-[hsl(213,19%,18%)] text-[16px] font-normal cursor-pointer transition-colors duration-300 ease-in-out rating-button"
           id="button"
+          value="5"
         >
           5
         </button>
@@ -73,13 +79,14 @@
 
       <button
         class="bg-[hsl(25,97%,53%)] text-[hsl(213,19%,18%)] hover:bg-[#fff] hover:text-[hsl(213,19%,18%)] text-[16px] font-bold w-full h-[50px] mt-4 cursor-pointer tracking-[0.3rem] rounded-4xl transition-colors duration-300 ease-in-out"
+        id="submit-button"
       >
         SUBMIT
       </button>
     </section>
 
     <section
-      class="bg-radial-[at_50%_0%] from-[hsl(215,20%,17%)] to-[hsl(212,24%,12%)] w-[400px] font-overpass text-[#fff] p-8 rounded-4xl shadow-lg flex flex-col justify-between items-center hidden"
+      class="bg-radial-[at_50%_0%] from-[hsl(215,20%,17%)] to-[hsl(212,24%,12%)] w-[90%] md:w-[400px] font-overpass text-[#fff] p-8 rounded-4xl shadow-lg flex flex-col justify-between items-center hidden"
       id="thank-you-section"
     >
       <div class="flex justify-center items-center my-6">
